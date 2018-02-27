@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+bower_components/
+build/
+npm-debug.*
+Thumbs.db
+img/icons.svg
+img/icons/
