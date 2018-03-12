@@ -9,6 +9,7 @@ var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
 var csscomb = require('gulp-csscomb');
 var watch = require('gulp-watch');
+var ghPages = require('gulp-gh-pages');
 
 
 //сборка стилей
@@ -44,4 +45,9 @@ gulp.task('csscomb', function() {
   .pipe(plumber())
   .pipe(csscomb())
   .pipe(gulp.dest('css/'))
+});
+
+gulp.task('page', function() {
+  return gulp.src('.')
+    .pipe(ghPages());
 });
