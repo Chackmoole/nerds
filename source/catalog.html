@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds catalog</title>
+</head>
+<body>
+  <header class="main-header">
+      <a href="#" class="logo">
+        <img src="" alt="NERDS">
+      </a>
+      <nav class="navigation"> 
+        <ul class="navigation__list">
+          <li>
+            <a href="#" class="navigation__link">Студия</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__link">Клиенты</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__link active-page">Магазин</a>
+          </li>
+          <li>
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+    </nav>    
+    <a href="#" class="main-header__cart">Корзина</a>
+  </header> 
+  
+  <main class="main-catalog">
+  
+  <h1 class="main-catalog__title">
+    Магазин готовых шаблонов
+  </h1>
+   
+   <ul class="main-catalog__list">
+     <li class="main-catalog__item">Стоимость</li>
+     <li class="main-catalog__item">Сортировать</li>
+     <li class="main-catalog__item">По цене</li>
+     <li class="main-catalog__item">По типу</li>
+     <li class="main-catalog__item">По названию</li>
+     <li class="main-catalog__item visually-hidden--text"> 
+        <a href="" class="main-catalog__link"> Сортировать по возрастанию</a></li>
+     <li class="main-catalog__item visually-hidden--text">
+        <a href="" class="main-catalog__link">Сортировать по убыванию</a></li>
+   </ul>
+    
+  <section class="filters">
+    
+      <form action=""class="form">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <div class="filters__slide">
+            <button class="filters__btn filters__btn--low" type="button"></button>
+            <button class="filters__btn filters__btn--high" type="button"></button>
+          </div>
+          <label for="" class="filters__label">От
+            <input type="text" class="filters__input filters__label--low" placeholder="0">
+          </label>
+          <label for="" class="filters__label filters__label--high">До
+            <input type="text" class="filters__input" placeholder="15000">
+          </label>
+        </fieldset>
+        
+        <fieldset class="filters__grid">
+          <legend>Сетка</legend>
+          <label>Адаптивная
+            <input type="radio" name="grid" class="filters__radio-btn" value="adaptiv">
+          </label>
+          <label>Фиксированная
+            <input type="radio" name="grid" class="filters__radio-btn" value="fixed">
+          </label>
+          <label>Резиновая
+            <input type="radio" name="grid" class="filters__radio-btn" value="rubber">
+          </label>
+        </fieldset>
+        
+        <fieldset class="filters__features">
+          <legend>Особенности</legend>
+          <input type="checkbox" class="filters__checkbox" checked="checked">
+          <input type="checkbox" class="filters__checkbox">
+          <input type="checkbox" class="filters__checkbox" checked="checked">
+          <input type="checkbox" class="filters__checkbox">
+          <input type="checkbox" class="filters__checkbox">
+        </fieldset>
+        <button class="button button--grey"></button>
+      </form>  
+   
+  </section>
+  
+  <section class="catalog">
+    <ul class="catalog-list">
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">sedona</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">pink</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">borodinski</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">mishka</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">U</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">kvastz</a></li>
+    </ul>
+  </section>
+  
+  <section class="map">
+      <a  href="#" class="map__link">
+        <img src="" alt="Как к нам проехать">
+      </a>
+  </section>
+  
+  <section class="catalog">
+    <ul class="catalog-list">
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">sedona</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">pink</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">borodinski</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">mishka</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">U</a></li>
+      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">kvastz</a></li>
+    </ul>
+  </section>
+  
+  </main>
+</body>
+</html>

@@ -14,7 +14,7 @@ var ghPages = require('gulp-gh-pages');
 
 //сборка стилей
 gulp.task('style', function() {
-  gulp.src("css/style.css")
+  gulp.src("source/css/style.css")
   .pipe(plumber())
   .pipe(postcss([
     autoprefixer()
@@ -23,31 +23,31 @@ gulp.task('style', function() {
   .pipe(rename({
     suffix: '.min'
   }))
-  .pipe(gulp.dest('css/'))
+  .pipe(gulp.dest('source/css/'))
   .pipe(server.reload({stream: true}));
 });
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "./",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("css/style.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("source/css/style.css", ["style"]);
+  gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task('csscomb', function() {
-  return gulp.src('css/style.css')
+  return gulp.src('source/css/style.css')
   .pipe(plumber())
   .pipe(csscomb())
-  .pipe(gulp.dest('css/'))
+  .pipe(gulp.dest('source/css/'))
 });
 
 gulp.task('page', function() {
-  return gulp.src('.')
+  return gulp.src('source/**/*')
     .pipe(ghPages());
 });
