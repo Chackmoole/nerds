@@ -1,2 +1,0 @@
-# Nerds
-Study project
