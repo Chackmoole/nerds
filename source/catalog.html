@@ -28,37 +28,40 @@
     <a href="#" class="main-header__cart">Корзина</a>
   </header> 
   
-  <main class="main-catalog">
+  <main class="catalog">
   
-  <h1 class="main-catalog__title">
+  <h1 class="catalog__title">
     Магазин готовых шаблонов
   </h1>
    
-   <ul class="main-catalog__list">
-     <li class="main-catalog__item">Стоимость</li>
-     <li class="main-catalog__item">Сортировать</li>
-     <li class="main-catalog__item">По цене</li>
-     <li class="main-catalog__item">По типу</li>
-     <li class="main-catalog__item">По названию</li>
-     <li class="main-catalog__item visually-hidden--text"> 
-        <a href="" class="main-catalog__link"> Сортировать по возрастанию</a></li>
-     <li class="main-catalog__item visually-hidden--text">
-        <a href="" class="main-catalog__link">Сортировать по убыванию</a></li>
-   </ul>
+  <h2 class="catalog__subtitle">Сортировать</h2>
+    <ul class="catalog__list">
+      <li class="catalog__sort"><a href="" class="catalog__link catalog__link--active">По цене</a></li>
+      <li class="catalog__sort"><a href="" class="catalog__link">По типу</a></li>
+      <li class="catalog__sort"><a href="" class="catalog__link">По названию</a></li>
+      <li class="catalog__sort"> 
+        <a href="" class="catalog__link catalog__link--active"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+      </li>
+      <li class="catalog__item">
+      <a href="" class="catalog__link"><span class="visually-hidden">Сортировать по убыванию</span></a></li>
+    </ul>
     
   <section class="filters">
     
-      <form action=""class="form">
+      <form action="" method="get">
         <fieldset>
-          <legend>Стоимость</legend>
+          
+          <legend class="catalog__subtitle">Стоимость</legend>
           <div class="filters__slide">
-            <button class="filters__btn filters__btn--low" type="button"></button>
-            <button class="filters__btn filters__btn--high" type="button"></button>
+            <div class="filter__scale"></div>
+            <div class="filter__scale filter__scale--active"></div> 
+            <button class="filters__btn filters__btn--min" type="button"></button>
+            <button class="filters__btn filters__btn--max" type="button"></button>
           </div>
-          <label for="" class="filters__label">От
+          <label class="filters__label">От
             <input type="text" class="filters__input filters__label--low" placeholder="0">
           </label>
-          <label for="" class="filters__label filters__label--high">До
+          <label class="filters__label filters__label--high">До
             <input type="text" class="filters__input" placeholder="15000">
           </label>
         </fieldset>
@@ -78,11 +81,21 @@
         
         <fieldset class="filters__features">
           <legend>Особенности</legend>
+          <label class="filters__label filters__label--checkbox">Слайдер
           <input type="checkbox" class="filters__checkbox" checked="checked">
+          </label>
+          <label class="filters__label filters__label--checkbox">Блок преимуществ
           <input type="checkbox" class="filters__checkbox">
+          </label>
+          <label class="filters__label filters__label--checkbox">Новости
           <input type="checkbox" class="filters__checkbox" checked="checked">
+          </label >
+          <label class="filters__label filters__label--checkbox">Галерея
           <input type="checkbox" class="filters__checkbox">
+          </label>
+          <label class="filters__label filters__label--checkbox">Корзина
           <input type="checkbox" class="filters__checkbox">
+          </label>
         </fieldset>
         <button class="button button--grey"></button>
       </form>  
@@ -91,31 +104,89 @@
   
   <section class="catalog">
     <ul class="catalog-list">
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">sedona</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">pink</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">borodinski</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">mishka</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">U</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">kvastz</a></li>
+      <li class="product">
+        <img src="" alt="Sedona" class="product__content" width="360" height="618">
+        <div class="product__tooltip">
+          <h2 class="product__title">Sedona</h2>
+          <p class="product__description">Информационный сайт для туристов</p>
+          <a href="#" class="product__link">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="product">
+        <img src="" alt="Pink app" class="product__content" width="360" height="618">
+        <div class="product__tooltip">
+          <h2 class="product__title">Pink app</h2>
+          <p class="product__description">Продуктивный лендинг приложение для iOS и Android</p>
+          <a href="#" class="product__link">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="product">
+        <img src="" alt="Barbershop" class="product__content" width="360" height="618">
+        <div class="product__tooltip">
+         <h2 class="product__title">Barbershop</h2>
+         <p class="product__description">Сайт салона красоты. Для мужчин, да.</p>
+          <a href="#" class="product__link">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="product">
+        <img src="" alt="Mishka" class="product__content" width="360" height="618">
+        <div class="product__tooltip">
+         <h2 class="product__title">Mishka</h2>
+         <p class="product__description">Интернет-магазин вязаных игрушек</p>
+          <a href="#" class="product__link">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="product">
+        <img src="" alt="A Plus" class="product__content" width="360" height="618">
+        <div class="product__tooltip">
+         <h2 class="product__title">A Plus</h2>
+         <p class="product__description">Лендинг курсов повышения квалификации</p>
+          <a href="#" class="product__link">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="product">
+        <img src="" alt="Kvast" class="product__content" width="360" height="618">
+        <div class="product__tooltip">
+         <h2 class="product__title">Kvast</h2>
+         <p class="product__description">Промо-сайт производителя крафтового квасая</p>
+          <a href="#" class="product__link">9 900 руб.</a>
+        </div>
+      </li>
     </ul>
+  </section>
+  
+  <section class="paginator">
+    <a href="" class="paginator__link paginator__link--active">1</a>
+    <a href="" class="paginator__link">2</a>
+    <a href="" class="paginator__link">3</a>
+    <a href="" class="paginator__link paginator__link--next">Следующая</a>
   </section>
   
   <section class="map">
       <a  href="#" class="map__link">
         <img src="" alt="Как к нам проехать">
       </a>
+      <div class="map__tooltip">
+        <h4 class="map__title">Nerds design studio</h4>
+        <p class="map__address">191186, Санкт-Петербург, ул Б.Конюшенская, д. 19/8</p>
+        <p class="map__address">тел. +7(812)275-75-75</p>
+        <a href="" class="map__button">Напишите нам</a>
+      </div>
   </section>
   
-  <section class="catalog">
-    <ul class="catalog-list">
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">sedona</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">pink</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">borodinski</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">mishka</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">U</a></li>
-      <li class="catalog-item"><a href="#" class="catalog-link visually-hidden--text">kvastz</a></li>
-    </ul>
-  </section>
+  <footer class="footer">
+    <section class="social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link">Вконтакте</a></li>
+        <li class="social__item"><a href="#" class="social__link"></a>facebook</li>
+        <li class="social__item"><a href="#" class="social__link"></a>instagramm</li>
+      </ul>
+    </section>
+    <section class="footer__promo">
+      <b class="footer__title">Давайте дружить, это выгодно!</b>
+      <p class="footer__description">Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
   
   </main>
 </body>
