@@ -8,6 +8,7 @@
 node_modules/
 bower_components/
 build/
+.publish/
 npm-debug.*
 Thumbs.db
 img/icons.svg
