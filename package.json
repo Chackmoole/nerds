@@ -23,7 +23,7 @@
     "stylelint": "stylelint less/**/*.less --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npm run build && gulp serve",
+    "start": "gulp serve",
     "jstest": "eslint js/"
   },
   "browserslist": [
