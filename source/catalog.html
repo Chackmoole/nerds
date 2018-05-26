@@ -36,6 +36,7 @@
     Магазин готовых шаблонов
   </h1>
 
+  <h2 class="catalog__subtitle">Стоимость</h2>
   <h2 class="catalog__subtitle">Сортировать</h2>
     <ul class="catalog__list">
       <li class="catalog__sort"><a href="" class="catalog__link catalog__link--active">По цене</a></li>
@@ -61,28 +62,28 @@
             <button class="filters__btn filters__btn--max" type="button"></button>
           </div>
           <label class="filters__label">От
-            <input type="text" class="filters__input filters__input--low" placeholder="0">
+            <input type="text" class="filters__input filters__input--min" placeholder="0">
           </label>
-          <label class="filters__label filters__label--high">До
-            <input type="text" class="filters__input" placeholder="15000">
+          <label class="filters__label">До
+            <input type="text" class="filters__input filters__input--max" placeholder="15000">
           </label>
         </fieldset>
 
         <fieldset class="filters__grid">
-          <legend>Сетка</legend>
-          <label>Адаптивная
+          <legend class="filters__title">Сетка</legend>
+          <label class="filters__item">Адаптивная
             <input type="radio" name="grid" class="filters__radio-btn" value="adaptiv">
           </label>
-          <label>Фиксированная
+          <label class="filters__item">Фиксированная
             <input type="radio" name="grid" class="filters__radio-btn" value="fixed">
           </label>
-          <label>Резиновая
+          <label class="filters__item">Резиновая
             <input type="radio" name="grid" class="filters__radio-btn" value="rubber">
           </label>
         </fieldset>
 
         <fieldset class="filters__features">
-          <legend>Особенности</legend>
+          <legend class="filters__title">Особенности</legend>
           <label class="filters__label filters__label--checkbox">Слайдер
           <input type="checkbox" class="filters__checkbox" checked="checked">
           </label>
