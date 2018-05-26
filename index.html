@@ -2,19 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Nerds</title>
 </head>
 <body>
   <header class="main-header">
+    <div class="main-header__inner">
       <a href="index.html" class="logo">
         <img src="img/icons/nerds-logo.svg" width="160" height="65" alt="NERDS">
       </a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li>
-            <a href="#" class="navigation__link">Студия</a>
+            <a href="#" class="navigation__link navigation__link--active">Студия</a>
           </li>
           <li>
             <a href="#" class="navigation__link">Клиенты</a>
@@ -26,99 +28,106 @@
             <a href="#" class="navigation__link">Контакты</a>
           </li>
         </ul>
-    </nav>
-    <a href="#" class="main-header__cart">Корзина</a>
+      </nav>
+      <a href="#" class="main-header__cart">Корзина</a>
+    </div>
+    </div>
   </header>
   <main>
-
     <section class="slider">
-      <div class="slider__slide">
+      <div class="slider__inner">
+      <div class="slider__slide slider__slide--one">
         <div class="slider__info">
           <h2 class="slider__title">Долго, дорого, скрупулезно.</h2>
-          <p class="slider__decription">Математически выверенный дизайн
-              для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="button button--red">Узнать больше</a>
+          <p class="slider__description">Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.</p>
+          <a href="#" class="button button--red button__middle">Узнать больше</a>
         </div>
       </div>
-      <div class="slider__slide">
+      <div class="slider__slide slider__slide--two">
         <div class="slider__info">
-          <h2 class="slider__title">Любим математику как никто другой</h2>
-          <p class="slider__decription">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#" class="button button--red">Узнать больше</a>
+          <h2 class="slider__title">Любим&nbsp;математику как&nbsp;никто&nbsp;другой</h2>
+          <p class="slider__description">Никакого креатива, только математические формулы для&nbsp;расчета идеальных пропорций.</p>
+          <a href="#" class="button button--red button__middle">Узнать больше</a>
         </div>
       </div>
-      <div class="slider__slide">
+      <div class="slider__slide slider__slide--three">
         <div class="slider__info">
-          <h2 class="slider__title">Только ночь, только хардкор</h2>
-          <p class="slider__decription">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="button button--red">Узнать больше</a>
+          <h2 class="slider__title">Только ночь, только&nbsp;хардкор</h2>
+          <p class="slider__description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#" class="button button--red button__middle">Узнать больше</a>
         </div>
+      </div>
       </div>
     </section>
-
     <section class="services">
-      <div class="services__inner">
-        <h3 class="services__title">Веб сайты</h3>
-        <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="#" class="button button--red">Заказать</a>
-      </div>
-      <div class="services__inner">
-        <h3 class="services__title">Приложения</h3>
-        <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="#" class="button button--green">Заказать</a>
-      </div>
-      <div class="services__inner">
-        <h3 class="services__title">Презентации</h3>
-        <p class="services__description">Вы даже не подозреваете,
-          насколько вы изумительны!</p>
-        <a href="#" class="button button--yellow">Заказать</a>
+      <div class="services__wrapper">
+        <div class="services__inner services__inner--first">
+          <h3 class="services__title">Веб сайты</h3>
+          <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#" class="button button--red">Заказать</a>
+        </div>
+        <div class="services__inner services__inner--second">
+          <h3 class="services__title">Приложения</h3>
+          <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="button button--green">Заказать</a>
+        </div>
+        <div class="services__inner services__inner--third">
+          <h3 class="services__title">Презентации</h3>
+          <p class="services__description">Вы даже не подозреваете,
+            насколько вы изумительны!</p>
+          <a href="#" class="button button--yellow">Заказать</a>
+        </div>
       </div>
     </section>
 
     <section class="info">
-      <div class="info__column">
-        <h2 class="info__title">Мы — маленькая, но гордая
-          дизайн-студия из Краснодара. </h2>
-        <p class="info__desription">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b class="info__sub-title">Выполняем заказы на разработку:</b>
-        <ul class="info__list">
-          <li class="info__item">Веб-сайтов любой сложности</li>
-          <li class="info__item">Мобильных приложений для iOS и Android</li>
-          <li class="info__item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
+      <div class="info__wrapper">
+        <div class="info__column info__column--first">
+          <h2 class="info__title">Мы — маленькая, но гордая
+            дизайн-студия из Краснодара. </h2>
+          <p class="info__desription">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b class="info__sub-title">Выполняем заказы на разработку:</b>
+          <ul class="info__list">
+            <li class="info__item">Веб-сайтов любой сложности</li>
+            <li class="info__item">Мобильных приложений для iOS и Android</li>
+            <li class="info__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
       </div>
-      <div class="info__column">
+        <div class="info__column info__column--second">
         <img src="img/nerds-illustration.png" width="360" height="208" alt="логотип nerds" class="info__image">
         <b class="info__sub-title">с 2004 года Любим точность во всем:</b>
-        <dl class="info__perfomance">
-          <dt class="info__perfomance-title">146%</dt>
-          <dd class="info__perfomance-description">Уровень
-            самоотдачи</dd>
-          <dt class="info__perfomance-title">100%</dt>
-          <dd class="info__perfomance-description">Соблюдение сроков</dd>
-          <dt class="info__perfomance-title">50%</dt>
-          <dd class="info__perfomance-description">Минимальная предоплата</dd>
-        </dl>
+        <div class="table">
+          <dl class="info__perfomance">
+            <dt class="info__perfomance-title">146<sup>%</sup></dt>
+            <dd class="info__perfomance-description">Уровень
+              самоотдачи</dd>
+            <dt class="info__perfomance-title">100<sup>%</sup></dt>
+            <dd class="info__perfomance-description">Соблюдение сроков</dd>
+            <dt class="info__perfomance-title">50<sup>%</sup></dt>
+            <dd class="info__perfomance-description">Минимальная предоплата</dd>
+          </dl>
+        </div>
+      </div>
       </div>
     </section>
 
     <section class="portfolio">
-     <a href="#" class="portfolio__link"><img src="img/logo-1.png" width="199" height="68" alt="html academy" class="portfolio__image"></a>
-     <a href="#" class="portfolio__link"><img src="img/logo-2.png" width="209" height="90" alt="barbershop borodinski" class="portfolio__image"></a>
-     <a href="#" class="portfolio__link"><img src="img/logo-3.png" width="185" height="52" alt="pink" class="portfolio__image"></a>
-     <a href="#" class="portfolio__link"><img src="img/logo-4.png" width="173" height="84" alt="mishka" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-1.png" width="199" height="68" alt="html academy" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-2.png" width="209" height="90" alt="barbershop borodinski" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-3.png" width="185" height="52" alt="pink" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-4.png" width="173" height="84" alt="mishka" class="portfolio__image"></a>
     </section>
 
   <section class="map">
       <div class="map__tooltip">
         <h4 class="map__title">Nerds design studio</h4>
-        <p class="map__address">191186, Санкт-Петербург, ул Б.Конюшенская, д. 19/8</p>
+        <p class="map__address">191186, Санкт-Петербург, <br /> ул Б.Конюшенская, д. 19/8</p>
         <p class="map__address">тел. +7(812)275-75-75</p>
-        <a href="" class="button">Напишите нам</a>
+        <a href="" class="button button--red button__small">Напишите нам</a>
       </div>
   </section>
-
   </main>
 
   <footer class="footer">
@@ -145,11 +154,9 @@
         <input type="text" class="popup__input" placeholder="email@example.com">
       </label>
       <label class="popup__label">Текст письма:
-        <input type="text" class="popup__input" placeholder="В свободной форме">
+        <input type="text" class="popup__input" placeholder="В свободной форме" required>
       </label>
-      <div class="button button--red">
-        <input type="submit" value="Отправить">
-      </div>
+      <button class="button button--red" type="submit">Отправить</button>
     </form>
   </section>
   </body>
