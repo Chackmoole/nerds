@@ -30,10 +30,10 @@
         </ul>
       </nav>
       <a href="#" class="main-header__cart">Корзина</a>
-    </div>
-    </div>
+     </div>
   </header>
   <main>
+
     <section class="slider">
       <div class="slider__inner">
       <div class="slider__slide slider__slide--one">
@@ -60,6 +60,7 @@
       </div>
       </div>
     </section>
+
     <section class="services">
       <div class="services__wrapper">
         <div class="services__inner services__inner--first">
@@ -121,16 +122,19 @@
     </section>
 
   <section class="map">
+    <div class="map_wrapper">
       <div class="map__tooltip">
         <h4 class="map__title">Nerds design studio</h4>
         <p class="map__address">191186, Санкт-Петербург, <br /> ул Б.Конюшенская, д. 19/8</p>
         <p class="map__address">тел. +7(812)275-75-75</p>
         <a href="" class="button button--red button__small">Напишите нам</a>
       </div>
+    </div>
   </section>
   </main>
 
   <footer class="footer">
+    <div class="footer__wrapper">
     <section class="social">
       <ul class="social__list">
         <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -142,21 +146,25 @@
       <b class="footer__title">Давайте дружить, это выгодно!</b>
       <p class="footer__description">Скидка 10% для друзей из социальных сетей.</p>
     </section>
+  </div>
   </footer>
 
   <section class="popup">
     <form action="" class="popup__form">
       <h2 class="popup__title">Напишите нам</h2>
-      <label class="popup__label">Ваше имя:
-        <input type="text" class="popup__input" placeholder="Имя Фамилия">
-      </label>
-      <label class="popup__label">Ваш e-mail:
-        <input type="text" class="popup__input" placeholder="email@example.com">
-      </label>
+      <div class="popup__inner">
+        <label class="popup__label">Ваше имя:
+          <input type="text" class="popup__input" placeholder="Имя Фамилия">
+        </label>
+        <label class="popup__label">Ваш e-mail:
+          <input type="text" class="popup__input" placeholder="email@example.com">
+        </label>
+      </div>
       <label class="popup__label">Текст письма:
-        <input type="text" class="popup__input" placeholder="В свободной форме" required>
+        <textarea type="text" class="popup__textarea" rows="5"  placeholder="" required>В свободной форме
+        </textarea>
       </label>
-      <button class="button button--red" type="submit">Отправить</button>
+      <button class="button button--red button__large" type="submit">Отправить</button>
     </form>
   </section>
   </body>
