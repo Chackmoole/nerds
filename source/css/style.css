@@ -9,7 +9,7 @@ body {
 }
 
 
-body>* {
+/* body>* {
   outline: 1px solid red;
 }
 
@@ -19,7 +19,7 @@ body>*>* {
 
 body>*>*>* {
   outline: 1px solid green;
-}
+} */
 
 img {
   display: block;
