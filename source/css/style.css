@@ -539,7 +539,7 @@ a{
 .filters__inner {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 52px;
+  /* margin-bottom: 52px; */
 }
 
 
@@ -547,7 +547,7 @@ a{
   box-sizing: border-box;
   height: 80px;
   background-color: #eeeeee;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   position: relative;
 
 }
@@ -594,6 +594,7 @@ a{
   border: 0;
   padding: 0;
   margin: 0;
+  margin-bottom: 55px;
 }
 
 .filters__label,
@@ -610,9 +611,9 @@ a{
   border: none;
   border-radius: 3px;
   text-align: center;
-  margin-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .filters__title {
@@ -620,17 +621,12 @@ a{
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 13px;
+
 }
 
 .filters__block .filters__title {
   margin-bottom: 48px;
-}
-
-.filters__item,
-.filters__label {
-  font-size: 16px;
-  line-height: 20px;
-  color: #283136;
 }
 
 .filters__grid {
@@ -638,13 +634,14 @@ a{
   margin-bottom: 26px;
 }
 
-.filters__grid .filters__title {
-  margin-bottom: 17px;
-}
-
 .filters__item {
   margin-left: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+
+.filters__features {
+  display: flex;
+  margin-bottom: 35px;
 }
 
 .catalog {
@@ -858,6 +855,22 @@ a{
 
 .button--yellow:active {
   background-color: #e5a722;
+}
+
+.button--grey {
+  color: black;
+  background-color: #eeeeee;
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: #dfdfdf;
+}
+
+.button--grey:active {
+  background-color: #d5d5d5;
+  box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
