@@ -2,18 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>Nerds</title>
 </head>
 <body>
   <header class="main-header">
+    <div class="main-header__inner">
       <a href="index.html" class="logo">
         <img src="img/icons/nerds-logo.svg" width="160" height="65" alt="NERDS">
       </a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li>
-            <a href="#" class="navigation__link">Студия</a>
+            <a href="index.html" class="navigation__link navigation__link--active">Студия</a>
           </li>
           <li>
             <a href="#" class="navigation__link">Клиенты</a>
@@ -25,127 +28,160 @@
             <a href="#" class="navigation__link">Контакты</a>
           </li>
         </ul>
-    </nav>
-    <a href="#" class="main-header__cart">Корзина</a>
+      </nav>
+      <a href="#" class="main-header__cart">Корзина</a>
+     </div>
   </header>
   <main>
 
     <section class="slider">
-      <div class="slider__slide">
+      <div class="slider__inner">
+      <div class="slider__slide slider__slide--one">
         <div class="slider__info">
           <h2 class="slider__title">Долго, дорого, скрупулезно.</h2>
-          <p class="slider__decription">Математически выверенный дизайн
-              для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="button button--red">Узнать больше</a>
+          <p class="slider__description">Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.</p>
+          <a href="#" class="button button--red button--middle">Узнать больше</a>
         </div>
       </div>
-      <div class="slider__slide">
+      <div class="slider__slide slider__slide--two">
         <div class="slider__info">
-          <h2 class="slider__title">Любим математику как никто другой</h2>
-          <p class="slider__decription">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#" class="button button--red">Узнать больше</a>
+          <h2 class="slider__title">Любим&nbsp;математику как&nbsp;никто&nbsp;другой</h2>
+          <p class="slider__description">Никакого креатива, только математические формулы для&nbsp;расчета идеальных пропорций.</p>
+          <a href="#" class="button button--red button--middle">Узнать больше</a>
         </div>
       </div>
-      <div class="slider__slide">
+      <div class="slider__slide slider__slide--three">
         <div class="slider__info">
-          <h2 class="slider__title">Только ночь, только хардкор</h2>
-          <p class="slider__decription">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="button button--red">Узнать больше</a>
+          <h2 class="slider__title">Только ночь, только&nbsp;хардкор</h2>
+          <p class="slider__description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#" class="button button--red button--middle">Узнать больше</a>
         </div>
+      </div>
       </div>
     </section>
 
     <section class="services">
-      <div class="services__inner">
-        <h3 class="services__title">Веб сайты</h3>
-        <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="#" class="button button--red">Заказать</a>
-      </div>
-      <div class="services__inner">
-        <h3 class="services__title">Приложения</h3>
-        <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="#" class="button button--green">Заказать</a>
-      </div>
-      <div class="services__inner">
-        <h3 class="services__title">Презентации</h3>
-        <p class="services__description">Вы даже не подозреваете,
-          насколько вы изумительны!</p>
-        <a href="#" class="button button--yellow">Заказать</a>
+      <div class="services__wrapper">
+        <div class="services__inner services__inner--first">
+          <h3 class="services__title">Веб сайты</h3>
+          <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#" class="button button--red">Заказать</a>
+        </div>
+        <div class="services__inner services__inner--second">
+          <h3 class="services__title">Приложения</h3>
+          <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="button button--green">Заказать</a>
+        </div>
+        <div class="services__inner services__inner--third">
+          <h3 class="services__title">Презентации</h3>
+          <p class="services__description">Вы даже не подозреваете,
+            насколько вы изумительны!</p>
+          <a href="#" class="button button--yellow">Заказать</a>
+        </div>
       </div>
     </section>
 
     <section class="info">
-      <div class="info__column">
-        <h2 class="info__title">Мы — маленькая, но гордая
-          дизайн-студия из Краснодара. </h2>
-        <p class="info__desription">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b class="info__sub-title">Выполняем заказы на разработку:</b>
-        <ul class="info__list">
-          <li class="info__item">Веб-сайтов любой сложности</li>
-          <li class="info__item">Мобильных приложений для iOS и Android</li>
-          <li class="info__item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
+      <div class="info__wrapper">
+        <div class="info__column info__column--first">
+          <h2 class="info__title">Мы — маленькая, но гордая
+            дизайн-студия из Краснодара. </h2>
+          <p class="info__desription">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b class="info__sub-title">Выполняем заказы на разработку:</b>
+          <ul class="info__list">
+            <li class="info__item">Веб-сайтов любой сложности</li>
+            <li class="info__item">Мобильных приложений для iOS и Android</li>
+            <li class="info__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
       </div>
-      <div class="info__column">
+        <div class="info__column info__column--second">
         <img src="img/nerds-illustration.png" width="360" height="208" alt="логотип nerds" class="info__image">
         <b class="info__sub-title">с 2004 года Любим точность во всем:</b>
-        <dl class="info__perfomance">
-          <dt class="info__perfomance-title">146%</dt>
-          <dd class="info__perfomance-description">Уровень
-            самоотдачи</dd>
-          <dt class="info__perfomance-title">100%</dt>
-          <dd class="info__perfomance-description">Соблюдение сроков</dd>
-          <dt class="info__perfomance-title">50%</dt>
-          <dd class="info__perfomance-description">Минимальная предоплата</dd>
-        </dl>
+        <div class="table">
+          <dl class="info__perfomance">
+            <dt class="info__perfomance-title">146<sup>%</sup></dt>
+            <dd class="info__perfomance-description">Уровень
+              самоотдачи</dd>
+            <dt class="info__perfomance-title">100<sup>%</sup></dt>
+            <dd class="info__perfomance-description">Соблюдение сроков</dd>
+            <dt class="info__perfomance-title">50<sup>%</sup></dt>
+            <dd class="info__perfomance-description">Минимальная предоплата</dd>
+          </dl>
+        </div>
+      </div>
       </div>
     </section>
 
     <section class="portfolio">
-     <a href="#" class="portfolio__link"><img src="img/logo-1.png" width="199" height="68" alt="html academy" class="portfolio__image"></a>
-     <a href="#" class="portfolio__link"><img src="img/logo-2.png" width="209" height="90" alt="barbershop borodinski" class="portfolio__image"></a>
-     <a href="#" class="portfolio__link"><img src="img/logo-3.png" width="185" height="52" alt="pink" class="portfolio__image"></a>
-     <a href="#" class="portfolio__link"><img src="img/logo-4.png" width="173" height="84" alt="mishka" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-1.png" width="199" height="68" alt="html academy" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-2.png" width="209" height="90" alt="barbershop borodinski" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-3.png" width="185" height="52" alt="pink" class="portfolio__image"></a>
+      <a href="#" class="portfolio__link"><img src="img/logo-4.png" width="173" height="84" alt="mishka" class="portfolio__image"></a>
     </section>
 
   <section class="map">
+    <div class="map_wrapper">
       <div class="map__tooltip">
         <h4 class="map__title">Nerds design studio</h4>
-        <p class="map__address">191186, Санкт-Петербург, ул Б.Конюшенская, д. 19/8</p>
+        <p class="map__address">191186, Санкт-Петербург, <br /> ул Б.Конюшенская, д. 19/8</p>
         <p class="map__address">тел. +7(812)275-75-75</p>
-        <a href="" class="map__button">Напишите нам</a>
+        <a href="" class="button button--red button--small">Напишите нам</a>
       </div>
+    </div>
   </section>
-
   </main>
 
   <footer class="footer">
+    <div class="footer__wrapper">
     <section class="social">
       <ul class="social__list">
-        <li class="social__item"><a href="#" class="social__link">Вконтакте</a></li>
-        <li class="social__item"><a href="#" class="social__link"></a>facebook</li>
-        <li class="social__item"><a href="#" class="social__link"></a>instagramm</li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk">
+            <span class="visually-hidden">Наша страница в Вконтакте</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--fb">
+            <span class="visually-hidden">Наша страница в facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagramm">
+            <span class="visually-hidden">Наша страница в instagramm</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+          </a>
+        </li>
       </ul>
     </section>
     <section class="footer__promo">
       <b class="footer__title">Давайте дружить, это выгодно!</b>
       <p class="footer__description">Скидка 10% для друзей из социальных сетей.</p>
     </section>
+  </div>
   </footer>
 
   <section class="popup">
     <form action="" class="popup__form">
       <h2 class="popup__title">Напишите нам</h2>
-      <label class="popup__label">Ваше имя:
-        <input type="text" class="popup__input" placeholder="Представьтесь, пожалуйста">
-      </label>
-      <label class="popup__label">Ваш e-mail:
-        <input type="text" class="popup__input" placeholder="Для отправки ответа">
-      </label>
+      <div class="popup__inner">
+        <label class="popup__label">Ваше имя:
+          <input type="text" class="popup__input" placeholder="Имя Фамилия">
+        </label>
+        <label class="popup__label">Ваш e-mail:
+          <input type="text" class="popup__input" placeholder="email@example.com">
+        </label>
+      </div>
       <label class="popup__label">Текст письма:
-        <input type="text" class="popup__input" placeholder="В свободное время">
+        <textarea type="text" class="popup__textarea" rows="5"  placeholder="В свободной форме" required></textarea>
       </label>
+      <button class="button button--red button--large" type="submit">Отправить</button>
+      <button class="popup__close">
+        <span class="visually-hidden">Закрыть окно отправки письма</span>
+      </button>
     </form>
   </section>
   </body>
